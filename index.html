@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Meet Souvik</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header>
+    <h1>Hello, I'm Souvik 👋</h1>
+    <p>Welcome to my creative world.</p>
+    
+    <nav>
+      <ul>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Projects</a></li>
+        <li><a href="#">Stories</a></li>
+        <li><a href="#">Photography</a></li>
+        <li><a href="#">Downloads</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </nav>
+
+    <button id="modeToggle">🌙 Dark Mode</button>
+  </header>
+
+  <main>
+    <section class="hero">
+      <h2>Let's Build, Capture, and Tell Stories Together.</h2>
+    </section>
+  </main>
+
+  <div class="window" id="aboutWindow" style="display:none;">
+    <div class="window-header" id="header">
+      <span>🗂️ About Souvik</span>
+      <button onclick="closeWindow('aboutWindow')">✖️</button>
+    </div>
+    <div class="window-content">
+      <p>Hi! I'm Souvik. I'm a storyteller, product nerd, and photography lover.</p>
+    </div>
+  </div>
+
+  <div class="window" id="projectsWindow" style="display:none;">
+    <div class="window-header">
+      <span>📁 Projects</span>
+      <button onclick="closeWindow('projectsWindow')">✖️</button>
+    </div>
+    <div class="window-content">
+      <p>Here you'll find my PM case studies and experiments.</p>
+    </div>
+  </div>  
+
+  <div class="window" id="blogWindow" style="display:none;">
+    <div class="window-header" id="header">
+      <span>📝 Stories</span>
+      <button onclick="closeWindow('blogWindow')">✖️</button>
+    </div>
+    <div class="window-content">
+      <p>Hi! I'm Souvik. I'm a storyteller, product nerd, and photography lover2.</p>
+    </div>
+  </div>
+
+  <div class="taskbar">
+    <button onclick="openWindow('aboutWindow')">🗂️ About</button>
+    <button onclick="openWindow('projectsWindow')">📁 Projects</button>
+    <button onclick="openWindow('blogWindow')">📝 Stories</button>
+  </div>  
+
+  <script src="js/main.js"></script>
+</body>
+</html>
